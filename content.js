@@ -1,3 +1,5 @@
+const GPT_TURBO_API_KEY = "<YOUR API KEY>";
+
 // Function to process selected text using ChatGPT with a custom prompt
 const processGPT = async (selectedText) => {
   const maxRetries = 3;
@@ -12,8 +14,7 @@ const processGPT = async (selectedText) => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer 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", // Replace with your ChatGPT API key
+            Authorization: "Bearer " + GPT_TURBO_API_KEY,
           },
           body: JSON.stringify({
             model: "gpt-3.5-turbo",

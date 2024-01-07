@@ -17,7 +17,5 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     request.action === "highlightShortcut"
   ) {
     const highlightedText = request.text;
-    console.log("Highlighted (from background):", highlightedText);
-    // Store the highlighted text or perform any necessary actions
   }
 });
