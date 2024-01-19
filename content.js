@@ -80,7 +80,7 @@ const createTooltip = (processedText, range) => {
 
 document.addEventListener("keydown", async function (event) {
   // Check if the Ctrl, Alt, and T keys are pressed
-  if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === "x") {
+  if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === "o") {
     const selection = window.getSelection();
     const selectedText = selection.toString().trim();
     const range = selection.getRangeAt(0);
